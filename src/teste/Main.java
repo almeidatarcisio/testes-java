@@ -15,13 +15,15 @@ public class Main {
 			numeros[i] = ler.nextInt();
 		}
 
-		int soma=0;
+		int pares=0, impares=0;
 		for(int i=0;i < numeros.length;i++) {
 			if(numeros[i] % 2 == 0) {
-				soma++;
+				pares++;
+			}else {
+				impares++;
 			}
 		}
-		System.out.print("Existem "+soma+" números pares.");
+		System.out.print("Existem "+pares+" números pares, e "+impares+" números ímpares.");
 		
 	}
 
